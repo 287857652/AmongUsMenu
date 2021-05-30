@@ -2,12 +2,6 @@ name: Build Project
 
 on:
   push:
-    tags: 
-      - v[0-9].[0-9]+.[0-9]+*
-  # pr's will trigger this action. i think the idea here is to verify that a build is passing before merging.
-  pull_request:
-    branches: 
-      - main
   
 jobs:
   Build_Release:
